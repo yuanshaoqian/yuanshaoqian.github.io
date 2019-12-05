@@ -141,6 +141,14 @@
 <ul>
     <li><div class="all active">全部文章<small>(6)</small></div></li>
     
+        
+            
+            <li><div data-rel="oracle">oracle<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
 </ul>
 <div class="left-bottom">
     <div class="menus">
@@ -190,11 +198,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color1">Djago</a>
+        <a class="color2">oracle</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color2">oracle</a>
+        <a class="color1">Djago</a>
     </li>
     
     <div class="clearfix"></div>
@@ -218,6 +226,11 @@
             <span class="post-date" title="2019-02-23 21:06:10">2019/02/23</span>
         </a>
         
+        <a class="oracle " href="/2019/12/06/oracle数据库表空间扩容/" data-tag="oracle" data-author>
+            <span class="post-title" title="oracle数据库表空间扩容">oracle数据库表空间扩容</span>
+            <span class="post-date" title="2019-12-06 00:43:17">2019/12/06</span>
+        </a>
+        
         <a class href="/2019/02/27/DjangoNo-1/" data-tag="Djago" data-author>
             <span class="post-title" title="DjangoNo.1">DjangoNo.1</span>
             <span class="post-date" title="2019-02-27 10:10:25">2019/02/27</span>
@@ -226,11 +239,6 @@
         <a class href="/2019/12/05/hello-world/" data-tag data-author>
             <span class="post-title" title="Hello World">Hello World</span>
             <span class="post-date" title="2019-12-05 22:25:10">2019/12/05</span>
-        </a>
-        
-        <a class href="/2019/12/06/oracle数据库表空间扩容/" data-tag="oracle" data-author>
-            <span class="post-title" title="oracle数据库表空间扩容">oracle数据库表空间扩容</span>
-            <span class="post-date" title="2019-12-06 00:43:17">2019/12/06</span>
         </a>
         
     </nav>
@@ -419,7 +427,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#C语言','#Djago','#oracle',],
+            'data': ['#C语言','#oracle','#Djago',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
