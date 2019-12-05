@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>C语言数据类型 | Yuan&#39;s Blog</title>
-  <meta name="keywords" content=" C语言 ">
-  <meta name="description" content="C语言数据类型 | Yuan&#39;s Blog">
+  <title>oracle数据库表空间扩容 | Yuan&#39;s Blog</title>
+  <meta name="keywords" content>
+  <meta name="description" content="oracle数据库表空间扩容 | Yuan&#39;s Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="E-mail:yuanshaoqiancom@gmail.com">
 <meta property="og:type" content="website">
@@ -241,25 +241,19 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-C语言数据类型" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-oracle数据库表空间扩容" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">C语言数据类型</h1>
+        <h1 class="article-title">oracle数据库表空间扩容</h1>
     
     <div class="article-meta">
         
         
         
-        
-        <span class="tag">
-            
-            <a class="color4">C语言</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title="更新时间: 2019-12-05 17:56:13">2019-02-23 21:06</time>
+        创建时间:<time class="date" title="更新时间: 2019-12-06 00:43:17">2019-12-06 00:43</time>
         
     </div>
     <div class="article-meta">
@@ -292,7 +286,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#int-unsigned-int-short-long"><span class="toc-text">int unsigned int short long</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#整型int"><span class="toc-text">整型int:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无符号整型unsigned-int"><span class="toc-text">无符号整型unsigned int:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#短整型short："><span class="toc-text">短整型short：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#长整型long："><span class="toc-text">长整型long：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#char类型："><span class="toc-text">char类型：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#long-double类型："><span class="toc-text">long double类型：</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -308,13 +302,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="int-unsigned-int-short-long"><a href="#int-unsigned-int-short-long" class="headerlink" title="int unsigned int short long"></a>int unsigned int short long</h1><h2 id="整型int"><a href="#整型int" class="headerlink" title="整型int:"></a>整型int:</h2><p>大小：16位2字节 或 32位4字节（取决于编译器）<br>存储格式：0~30位是数据位，第31位是符号位，用0代表正数，1代表负数。负数用补码存储。<br>存储范围：-2^31 ~ 2^31-1<br>打印格式：%d（十进制）、%o（八进制）、%x或%X（十六进制）<br>如需要打印八进制和十六进制的特殊格式，加#<br>%#o（打印八进制数，数前有0表示八进制数），%#x（打印十六进制数，数前有0x表示十六进制数）<br><br><br>常见的有十进制，八进制，十六进制三种数字进制。<br>八进制输入输出格式化控制符使用%o或%#o。八进制数以0开头，如0666<br>十六进制输入输出格式化控制符使用%x或%X或%#x或%#X。十六进制数以0x开头，如0x12345678</p>
-<h2 id="无符号整型unsigned-int"><a href="#无符号整型unsigned-int" class="headerlink" title="无符号整型unsigned int:"></a>无符号整型unsigned int:</h2><p>大小：同int型<br>存储格式：0~31位都是数据位，无符号位<br>存储范围：0 ~ 2^32-1<br>打印格式：%u<br>说明：<br>与int型基本相同，区别是int型的符号位不再是符号位而也作为数据位，因此无符号整型数据比整型数据存储范围大2倍，不过无法存储负数<br>适用于只有正数的情况<br>unsigned关键字不仅仅可以修饰int类型，还可修饰short long char等类型。<br>注意：unsigned关键字修饰的变量无法接收负数。<br>无符号数的输入输出格式控制是%u</p>
-<h2 id="短整型short："><a href="#短整型short：" class="headerlink" title="短整型short："></a>短整型short：</h2><p>大小：16位2字节<br>存储格式：0~14位为数据位，第15位为符号位，用0代表正数，1代表负数<br>存储范围：-32768 ~ 32767<br>打印格式：%hd<br>说明：<br>short类型与int类型类似，只不过是16位，2字节。第15位为符号位，后面几位为数据位<br>short类型适用于存储不太大的数据，节省内存空间。<br>short类型的输入输出格式控制是%hd</p>
-<h2 id="长整型long："><a href="#长整型long：" class="headerlink" title="长整型long："></a>长整型long：</h2><p>大小：32位4字节<br>存储格式：同32位int类型<br>存储范围：同32位int类型<br>打印格式：%ld<br>说明：<br>在过去的16位编译器中，int型是16位，所以long类型是32位。<br>不过在现代的32位编译器中，int型与long类型已无本质区别。<br>如果需要考虑程序跨平台移植（如16位编译器<--->32位编译器）需要谨慎选择使用int还是long</---></p>
-<h2 id="char类型："><a href="#char类型：" class="headerlink" title="char类型："></a>char类型：</h2><p>大小：8位1字节<br>存储格式：0~6位都为数据位（128） 或 0~7位都为数据位（256，扩展后的ASCII表）<br>存储范围：0 ~ 255<br>打印格式：%c<br>说明：char类型也属于整型数据类型（int、short、long）的一份子，只不过char类型运算时使用ASCII表来确定值。与其他三个整型数据类型不同的是，char类型默认就是unsigned类型，而其他三个则默认是signed类型。</p>
-<h2 id="long-double类型："><a href="#long-double类型：" class="headerlink" title="long double类型："></a>long double类型：</h2><p>大小：96位12字节（取决于编译器，有8字节、10字节、12字节、16字节几种情况）<br>存储格式：未知<br>精度：不少于double类型<br>存储范围：不少于double类型<br>打印格式：%lf，%le</p>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 yuanshaoqiancom@gmail.com </span>
     </div>
@@ -327,12 +315,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>C语言数据类型</p>
+    <p><span class="copy-title">文章标题:</span>oracle数据库表空间扩容</p>
     
     <p><span class="copy-title">本文作者:</span><a title="Mr.Yuan">Mr.Yuan</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-02-23, 21:06:10</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-05, 17:56:13</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/02/23/C语言数据类型/" title="C语言数据类型">https://yuanshaoqian.github.io/2019/02/23/C语言数据类型/</a>
+    <p><span class="copy-title">发布时间:</span>2019-12-06, 00:43:17</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-06, 00:43:17</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/06/oracle数据库表空间扩容/" title="oracle数据库表空间扩容">https://yuanshaoqian.github.io/2019/12/06/oracle数据库表空间扩容/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
