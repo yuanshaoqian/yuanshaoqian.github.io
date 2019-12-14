@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>Yuan&#39;s Blog</title>
-  <meta name="keywords" content>
-  <meta name="description" content="Yuan&#39;s Blog">
+  <title>安卓手机打开网络调试 | Yuan&#39;s Blog</title>
+  <meta name="keywords" content=" adb build.prop android ">
+  <meta name="description" content="安卓手机打开网络调试 | Yuan&#39;s Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="安卓手机打开adb网络调试开不开机  近期，由于想把锤子手机的网络调试打开，在刷了奇兔上的room已成功root，所以为了方便调试，就想打开网络adb，在搜索了半天的软件什么的，均不能使用，锤子系统真的太封闭了，所以就想改系统的配置文件试一下。 安卓打开adb1.手机需要root，用USB连接手机，连接后，下载配置文件 1$ adb pull /system/build.prop 此时会把buil">
 <meta name="keywords" content="adb build.prop android">
@@ -53,7 +53,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg">
@@ -261,12 +261,60 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-安卓手机打开网络调试" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于叶落阁"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">安卓手机打开网络调试</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+        <span class="tag">
+            
+            <a class="color3">adb build.prop android</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title="更新时间: 2019-12-14 17:05:46">2019-12-14 17:04</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安卓手机打开adb网络调试开不开机"><span class="toc-text">安卓手机打开adb网络调试开不开机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安卓打开adb"><span class="toc-text">安卓打开adb</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开不了机了，咋办？"><span class="toc-text">开不了机了，咋办？</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -279,36 +327,60 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阿杰（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href="http://yelog.org/2017/03/24/3-hexo-shortcuts/">3-hexo快捷键说明</a></li>
-</ul>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="安卓手机打开adb网络调试开不开机"><a href="#安卓手机打开adb网络调试开不开机" class="headerlink" title="安卓手机打开adb网络调试开不开机"></a>安卓手机打开adb网络调试开不开机</h1><p>  近期，由于想把锤子手机的网络调试打开，在刷了奇兔上的room已成功root，所以为了方便调试，就想打开网络adb，在搜索了半天的软件什么的，均不能使用，锤子系统真的太封闭了，所以就想改系统的配置文件试一下。</p>
+<h2 id="安卓打开adb"><a href="#安卓打开adb" class="headerlink" title="安卓打开adb"></a>安卓打开adb</h2><p>1.手机需要root，用USB连接手机，连接后，下载配置文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> adb pull /system/build.prop</span><br></pre></td></tr></table></figure>
+<p>此时会把build.prop配置文件下载到你当前所在的目录。</p>
+<p>2.修改配置文件</p>
+<p>在配置文件加入：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> service.adb.tcp.port=5555</span><br></pre></td></tr></table></figure>
+<p>3.重新挂载system分区，并把修改后的配置文件push回去</p>
+<p>在这一步废了老劲，我就想着，我有了root权限，我最大，我能删系统文件，我为什么重新挂载分区还不行。</p>
+<p>一开始的步骤：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>对于有些手机还是有用的应该。</span><br><span class="line"><span class="meta">#</span>获取system分区</span><br><span class="line"><span class="meta">$</span> adb shell</span><br><span class="line"><span class="meta">$</span> su</span><br><span class="line"><span class="meta">$</span> mount | grep 'system'</span><br><span class="line">/dev/block/mmcblk0p54 on /system type ext4 (ro,seclabel,relatime,discard,data=ordered)</span><br><span class="line"><span class="meta">$</span> mount -o remount,rw /dev/block/mmcblk0p54 /system</span><br><span class="line">mount: '/system' not in /proc/mounts</span><br><span class="line"><span class="meta">#</span> ？？？</span><br><span class="line"><span class="meta">#</span> 不能重新挂载，就不能写入新文件。继续尝试：</span><br><span class="line"><span class="meta">$</span> mount -o rw,remount -t auto /system</span><br><span class="line"><span class="meta">#</span> OK 了。</span><br><span class="line"><span class="meta">#</span> 上传文件过去</span><br><span class="line"><span class="meta">$</span> adb push build.prop /system/</span><br><span class="line"><span class="meta">#</span> 上传成功。重启</span><br><span class="line"><span class="meta">$</span> reboot</span><br></pre></td></tr></table></figure>
+<p>一通等待。。。</p>
+<h2 id="开不了机了，咋办？"><a href="#开不了机了，咋办？" class="headerlink" title="开不了机了，咋办？"></a>开不了机了，咋办？</h2><p>手机开机卡在了logo界面，一万个草泥马奔腾而过。。。</p>
+<p>难道要重新刷机吗？我不想。。肯定是哪里不对。</p>
+<p>一通google</p>
+<p>又结果了，手机在开机时会检查相关配置文件的权限，如果权限不对，会报错。</p>
+<p>其实现在也能通过adb进入系统的，直接进入，如果不能进入系统，就先进入rec然后也可以shell</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> adb shell</span><br><span class="line"><span class="meta">$</span> su</span><br><span class="line"><span class="meta">$</span> ls -l /system</span><br><span class="line">-rwxr-xr-x  1 root root  10105 2019-12-04 13:18 build.prop</span><br><span class="line"><span class="meta">#</span> 发现现在是755，改到644试试。</span><br><span class="line"><span class="meta">$</span> chmod 644 /system/build.prop</span><br><span class="line"><span class="meta">$</span> reboot</span><br></pre></td></tr></table></figure>
+<p>等待ing…..</p>
+<p>开机了！</p>
+<p>成功开机，然后先看看现在的IP地址。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> adb shell</span><br><span class="line"><span class="meta">$</span> ip ad</span><br><span class="line">22: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000</span><br><span class="line">    link/ether b4:0b:44:a8:80:ad brd ff:ff:ff:ff:ff:ff</span><br><span class="line">    inet 192.168.50.102/24 brd 192.168.50.255 scope global wlan0</span><br><span class="line">       valid_lft forever preferred_lft forever</span><br><span class="line">    inet6 fe80::b60b:44ff:fea8:80ad/64 scope link</span><br><span class="line">       valid_lft forever preferred_lft forever</span><br><span class="line"><span class="meta">#</span> 查看相应端口是否有监听</span><br><span class="line"><span class="meta">$</span> netstat -anp | grep 5555</span><br><span class="line">tcp        0      0 :::5555                 :::*                    LISTEN      586/adbd</span><br></pre></td></tr></table></figure>
+<p>拔掉数据线，网络连接：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> adb connect 192.168.50.102:5555</span><br><span class="line">connected to 192.168.50.102:5555</span><br></pre></td></tr></table></figure>
+<p>舒服。。。</p>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 yuanshaoqiancom@gmail.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>安卓手机打开网络调试</p>
+    
+    <p><span class="copy-title">本文作者:</span><a title="Mr.Yuan">Mr.Yuan</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-12-14, 17:04:10</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-14, 17:05:46</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/14/安卓手机打开网络调试/" title="安卓手机打开网络调试">https://yuanshaoqian.github.io/2019/12/14/安卓手机打开网络调试/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
     <div id="comments"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 
@@ -328,6 +400,13 @@
         gitalk.render('comments')
     })
 </script>
+
+
+
+
+    
+
+
 
 
     </div>
